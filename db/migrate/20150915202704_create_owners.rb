@@ -6,6 +6,6 @@ class CreateOwners < ActiveRecord::Migration
   end
   
   def change
-    create_table :owners do |t| t.string :name
+    create_table :owners {|t| t.string :name}
   end
 end
