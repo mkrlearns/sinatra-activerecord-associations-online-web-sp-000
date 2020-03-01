@@ -5,7 +5,7 @@ class CreateOwners < ActiveRecord::Migration
     end
   end
   
-  def down
-    drop_table :owners
+  def change
+    create_table :owners do |t| t.string :name
   end
 end
